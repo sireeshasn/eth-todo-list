@@ -20,14 +20,6 @@ App = {
     // Modern dapp browsers...
     if (window.ethereum) {
       window.web3 = new Web3(ethereum)
-      try {
-        // Request account access if needed
-        await ethereum.enable()
-        // Acccounts now exposed
-        web3.eth.sendTransaction({/* ... */})
-      } catch (error) {
-        // User denied account access...
-      }
     }
     // Legacy dapp browsers...
     else if (window.web3) {
@@ -44,6 +36,8 @@ App = {
 
   loadAccount: async () => {
     // Set the current blockchain account
+    console.log('use this account')
+    console.log(web3.eth.accounts)
     App.account = web3.eth.accounts[0]
   },
 
