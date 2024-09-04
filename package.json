@@ -24,5 +24,14 @@
   },
   "dependencies": {
     "web3": "0.20.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dappuniversity/eth-todo-list.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/dappuniversity/eth-todo-list/issues"
+  },
+  "homepage": "https://github.com/dappuniversity/eth-todo-list#readme"
 }
